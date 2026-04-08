@@ -1,0 +1,121 @@
+<!-- // ======================= index.html ======================= -->
+
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styel.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body><!-- Header -->
+<header>
+    <h1>Naman Nagar</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h2>Hi, I'm <span>Naman Nagar</span></h2>
+    <p id="typing"></p>
+    <button onclick="scrollToProjects()">View Work</button>
+</section>
+
+<!-- About -->
+<section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+        I am a frontend developer passionate about building modern UI
+        using HTML, CSS and JavaScript.
+    </p>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="projects">
+
+        <div class="card" data-aos="zoom-in">
+            <div class="card-icon"><i class="fas fa-handshake"></i></div>
+            <h3>Campus Saathi</h3>
+            <p>A comprehensive platform for campus community and peer assistance</p>
+            <div class="card-buttons">
+                <button onclick="openLink('https://naman-nagar10.github.io/campus-saathi/')"><i class="fas fa-globe"></i> Live</button>
+                <button class="btn-github" onclick="openLink('https://github.com/naman-nagar10/campus-saathi')"><i class="fab fa-github"></i> Code</button>
+            </div>
+        </div>
+
+        <div class="card" data-aos="zoom-in" style="animation-delay: 0.1s">
+            <div class="card-icon"><i class="fas fa-check-square"></i></div>
+            <h3>To-Do App</h3>
+            <p>A feature-rich task management application with local storage</p>
+            <div class="card-buttons">
+                <button onclick="openLink('#')"><i class="fas fa-globe"></i> Live</button>
+                <button class="btn-github" onclick="openLink('#')"><i class="fab fa-github"></i> Code</button>
+            </div>
+        </div>
+
+        <div class="card" data-aos="zoom-in" style="animation-delay: 0.2s">
+            <div class="card-icon"><i class="fas fa-cloud-sun"></i></div>
+            <h3>Weather App</h3>
+            <p>Real-time weather application with location-based forecasting</p>
+            <div class="card-buttons">
+                <button onclick="openLink('#')"><i class="fas fa-globe"></i> Live</button>
+                <button class="btn-github" onclick="openLink('#')"><i class="fab fa-github"></i> Code</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" data-aos="fade-up">
+    <h2>Get In Touch</h2>
+    <p>I'm always open to new opportunities and collaborations!</p>
+    <div class="contact-container">
+        <a href="mailto:namannagar29@gmail.com" class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <h4>Email</h4>
+            <p>namannagar29@gmail.com</p>
+        </a>
+        <a href="#" class="contact-card">
+            <i class="fab fa-linkedin"></i>
+            <h4>LinkedIn</h4>
+            <p>Connect with me</p>
+        </a>
+        <a href="#" class="contact-card">
+            <i class="fab fa-github"></i>
+            <h4>GitHub</h4>
+            <p>Check my work</p>
+        </a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Naman Nagar</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
