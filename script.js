@@ -10,7 +10,7 @@ if (typeof AOS !== 'undefined') {
 
 // Typing Animation
 const texts = [
-     "Frontend Developer", 
+     "MERN stack Developer", 
      "Creative Coder", 
      "JavaScript Lover" 
 ];
