@@ -1,124 +1,758 @@
-<!-- // ======================= index.html ======================= -->
+<!DOCTYPE html>
+<html lang="en">
 
-<!DOCTYPE html><html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="styel.css">
-    
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <meta name="theme-color" content="#0b1020">
+
+  <title>Naman Nagar — Full Stack Developer</title>
+
+  <meta
+    name="description"
+    content="Portfolio of Naman Nagar, a full stack developer building modern and useful digital experiences."
+  >
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<body><!-- Header -->
-<header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
 
-<!-- Hero Section -->
-<section class="hero">
-    <h2>Hi, I'm <span>Naman Nagar</span></h2>
-    <p id="typing"></p>
-    <button onclick="scrollToProjects()">View Work</button>
-</section>
 
-<!-- About -->
-<div data-aos="fade-down"></div>
-    <h2>About Me</h2>
-    <p>
-        I am a full stack developer passionate about building modern websites 
-        using HTML, CSS and JavaScript and MERN technology.
-    </p>
-</section>
+<body>
 
-<!-- Projects -->
-<section id="projects">
-    <h2>My Projects</h2>
+  <div class="portfolio-wrapper">
 
-    <div class="projects">
+    <!-- ================= HEADER ================= -->
 
-        <div class="card" data-aos="zoom-in">
-            <div class="card-icon"><i class="fas fa-handshake"></i></div>
-            <h3>Campus Saathi</h3>
-            <p>A comprehensive platform for campus community and peer assistance</p>
-            <h4>(Improving [final till 16 August])</h4>
-            <br>
-            <div class="card-buttons">
-                <button onclick="openLink('https://naman-nagar10.github.io/campus-saathi/')"><i class="fas fa-globe"></i> Live</button>
-                <button class="btn-github" onclick="openLink('https://github.com/naman-nagar10/campus-saathi')"><i class="fab fa-github"></i> Code</button>
+    <header class="site-header" id="site-header">
+
+      <div class="container header-content">
+
+        <!-- Logo -->
+        <a href="#home" class="website-logo">
+          <span class="logo-icon">{}</span>
+
+          <span>
+            naman<span class="logo-dot">.</span>dev
+          </span>
+        </a>
+
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-navigation">
+
+          <a
+            href="#home"
+            class="navigation-link active"
+            data-section="home"
+          >
+            Home
+          </a>
+
+          <a
+            href="#about"
+            class="navigation-link"
+            data-section="about"
+          >
+            About
+          </a>
+
+          <a
+            href="#projects"
+            class="navigation-link"
+            data-section="projects"
+          >
+            Projects
+          </a>
+
+          <a
+            href="#contact"
+            class="navigation-link"
+            data-section="contact"
+          >
+            Contact
+          </a>
+
+        </nav>
+
+
+        <!-- Header Contact Button -->
+        <a
+          href="mailto:namannagar29@gmail.com"
+          class="header-contact-button"
+        >
+          Let's talk
+
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+
+
+        <!-- Mobile Menu Button -->
+        <button
+          class="mobile-menu-button"
+          id="mobile-menu-button"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+      </div>
+
+
+      <!-- Mobile Navigation -->
+      <nav
+        class="mobile-navigation"
+        id="mobile-navigation"
+      >
+
+        <a href="#home" data-section="home">
+          <span>01</span>
+          Home
+        </a>
+
+        <a href="#about" data-section="about">
+          <span>02</span>
+          About
+        </a>
+
+        <a href="#projects" data-section="projects">
+          <span>03</span>
+          Projects
+        </a>
+
+        <a href="#contact" data-section="contact">
+          <span>04</span>
+          Contact
+        </a>
+
+      </nav>
+
+    </header>
+
+
+
+    <main>
+
+      <!-- ================= HERO SECTION ================= -->
+
+      <section class="hero-section section" id="home">
+
+        <!-- Background effects -->
+        <div class="background-glow green-glow"></div>
+        <div class="background-glow orange-glow"></div>
+
+
+        <div class="container hero-content">
+
+          <div class="hero-text">
+
+            <!-- Availability -->
+            <p class="availability-text">
+
+              <span></span>
+
+              Available for new opportunities
+
+            </p>
+
+
+            <!-- Main Heading -->
+            <h1 class="hero-title">
+
+              Hi, I'm<br>
+
+              <strong>Naman</strong><em>.</em>
+
+            </h1>
+
+
+            <!-- Typing Text -->
+            <p class="typing-text">
+
+              <span id="typing-text">
+                MERN Stack Developer
+              </span>
+
+              <b></b>
+
+            </p>
+
+
+            <!-- Description -->
+            <p class="hero-description">
+
+              I build modern, responsive and useful digital
+              experiences from the first line of code to the
+              final polished detail.
+
+            </p>
+
+
+            <!-- Hero Buttons -->
+            <div class="hero-buttons">
+
+              <a
+                href="#projects"
+                class="primary-button"
+              >
+
+                View my work
+
+                <i class="fa-solid fa-arrow-down"></i>
+
+              </a>
+
+
+              <a
+                href="mailto:namannagar29@gmail.com"
+                class="email-button"
+              >
+
+                <i class="fa-regular fa-envelope"></i>
+
+                namannagar29@gmail.com
+
+              </a>
+
             </div>
+
+          </div>
+
         </div>
 
-        <div class="card" data-aos="zoom-in" style="animation-delay: 0.1s">
-            <div class="card-icon"><i class="fas fa-check-square"></i></div>
-            <h3>To-Do App</h3>
-            <p>A feature-rich task management application with local storage</p>
-            <div class="card-buttons">
-                <button onclick="openLink('https://naman-nagar10.github.io/Todo-App/')"><i class="fas fa-globe"></i> Live</button>
-                <button class="btn-github" onclick="openLink('https://github.com/naman-nagar10/Todo-App')"><i class="fab fa-github"></i> Code</button>
-            </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+
+          <span>
+            Scroll to explore
+          </span>
+
+          <i class="fa-solid fa-arrow-down"></i>
+
         </div>
 
-        <div class="card" data-aos="zoom-in" style="animation-delay: 0.2s">
-            <div class="card-icon"><i class="fas fa-cloud-sun"></i></div>
-            <h3>Weather App</h3>
-            <p>Real-time weather application with location-based forecasting</p>
-            <br>
-            <div class="card-buttons">
-                <button onclick="openLink('https://naman-nagar10.github.io/Weather/')"><i class="fas fa-globe"></i> Live</button>
-                <button class="btn-github" onclick="openLink('https://github.com/naman-nagar10/Weather')"><i class="fab fa-github"></i> Code</button>
+      </section>
+
+
+
+      <!-- ================= ABOUT SECTION ================= -->
+
+      <section
+        class="about-section section"
+        id="about"
+      >
+
+        <div class="container about-content">
+
+
+          <!-- About Heading -->
+          <div class="section-heading reveal">
+
+            <p class="section-label">
+               About
+            </p>
+
+            <h2 class="section-title">
+
+              A developer who cares about the
+              <strong>why.</strong>
+
+            </h2>
+
+          </div>
+
+
+          <!-- About Content -->
+          <div class="about-details reveal">
+
+            <p class="about-description">
+
+              I am a full stack developer passionate about
+              building modern websites and web applications
+              using HTML, CSS, JavaScript and MERN technology.
+
+            </p>
+
+
+            <!-- Developer Values -->
+            <div class="values-list">
+
+
+              <article class="value-item">
+
+                <span>01</span>
+
+                <h3>
+                  Front to back
+                </h3>
+
+                <p>
+                  I enjoy the whole development journey.
+                </p>
+
+              </article>
+
+
+              <article class="value-item">
+
+                <span>02</span>
+
+                <h3>
+                  Curiosity
+                </h3>
+
+                <p>
+                  Always learning by building.
+                </p>
+
+              </article>
+
+
+              <article class="value-item">
+
+                <span>03</span>
+
+                <h3>
+                  Detail
+                </h3>
+
+                <p>
+                  Small things make a difference.
+                </p>
+
+              </article>
+
+
+              <article class="value-item">
+
+                <span>04</span>
+
+                <h3>
+                  Collaboration
+                </h3>
+
+                <p>
+                  Better work, together.
+                </p>
+
+              </article>
+
             </div>
+
+          </div>
+
         </div>
 
-    </div>
-</section>
+      </section>
 
-<!-- Contact -->
-<section id="contact" data-aos="fade-up">
-    <h2>Get In Touch</h2>
-    <p>I'm always open to new opportunities and collaborations!</p>
-    <div class="contact-container">
-        <a href="mailto:namannagar29@gmail.com" class="contact-card">
-            <i class="fas fa-envelope"></i>
-            <h4>Email</h4>
-            <p>namannagar29@gmail.com</p>
-        </a>
-        <a href="#" class="contact-card">
-            <i class="fab fa-linkedin"></i>
-            <h4>LinkedIn</h4>
-            <p>Connect with me</p>
-        </a>
-        <a href="https://github.com/Naman-Nagar10" class="contact-card">
-            <i class="fab fa-github"></i>
-            <h4>GitHub</h4>
-            <p>Check my work</p>
-        </a>
-    </div>
-</section>
 
-<!-- Footer -->
-<footer>
-    <p>Made with ❤️ and ☕</p>
-    <p>© 2026 Naman Nagar</p>
-</footer>
 
-<!-- Scripts -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script src="script.js"></script>
+      <!-- ================= PROJECTS SECTION ================= -->
+
+      <section
+        class="projects-section section"
+        id="projects"
+      >
+
+        <div class="container">
+
+
+          <!-- Projects Heading -->
+          <div class="projects-heading reveal">
+
+            <div>
+
+              <p class="section-label">
+                 Selected work
+              </p>
+
+              <h2 class="section-title">
+
+                Things I've
+                <strong>built.</strong>
+
+              </h2>
+
+            </div>
+
+
+            <p class="projects-description">
+
+              A selection of projects, experiments and
+              useful digital experiences.
+
+            </p>
+
+          </div>
+
+
+
+          <!-- Project Cards -->
+          <div class="project-list">
+
+
+            <!-- Project 1 -->
+            <article class="project-card reveal">
+
+              <div class="project-header">
+
+                <div class="project-icon">
+
+                  <i class="fa-solid fa-handshake"></i>
+
+                </div>
+
+                <span>01</span>
+
+              </div>
+
+
+              <div class="project-content">
+
+                <h3>
+                  Campus Saathi
+                </h3>
+
+                <p>
+
+                  A comprehensive platform for campus
+                  community, notes, resources and
+                  peer assistance.
+
+                </p>
+
+                <small>
+                  Currently improving the project.
+                </small>
+
+
+                <div class="project-links">
+
+                  <a
+                    href="https://naman-nagar10.github.io/campus-saathi/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+
+                    Live
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                  </a>
+
+
+                  <a
+                    href="https://github.com/naman-nagar10/campus-saathi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+
+                    <i class="fa-brands fa-github"></i>
+
+                    Code
+
+                  </a>
+
+                </div>
+
+              </div>
+
+            </article>
+
+
+
+            <!-- Project 2 -->
+            <article class="project-card reveal">
+
+              <div class="project-header">
+
+                <div class="project-icon">
+
+                  <i class="fa-solid fa-check"></i>
+
+                </div>
+
+                <span>02</span>
+
+              </div>
+
+
+              <div class="project-content">
+
+                <h3>
+                  To-Do App
+                </h3>
+
+                <p>
+
+                  A feature-rich task management application
+                  with local storage and a clean interface.
+
+                </p>
+
+
+                <div class="project-links">
+
+                  <a
+                    href="https://naman-nagar10.github.io/Todo-App/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+
+                    Live
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                  </a>
+
+
+                  <a
+                    href="https://github.com/naman-nagar10/Todo-App"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+
+                    <i class="fa-brands fa-github"></i>
+
+                    Code
+
+                  </a>
+
+                </div>
+
+              </div>
+
+            </article>
+
+
+
+            <!-- Project 3 -->
+            <article class="project-card reveal">
+
+              <div class="project-header">
+
+                <div class="project-icon">
+
+                  <i class="fa-solid fa-cloud-sun"></i>
+
+                </div>
+
+                <span>03</span>
+
+              </div>
+
+
+              <div class="project-content">
+
+                <h3>
+                  Weather App
+                </h3>
+
+                <p>
+
+                  A real-time weather application with
+                  location-based weather information.
+
+                </p>
+
+
+                <div class="project-links">
+
+                  <a
+                    href="https://naman-nagar10.github.io/Weather/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+
+                    Live
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                  </a>
+
+
+                  <a
+                    href="https://github.com/naman-nagar10/Weather"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+
+                    <i class="fa-brands fa-github"></i>
+
+                    Code
+
+                  </a>
+
+                </div>
+
+              </div>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- ================= CONTACT SECTION ================= -->
+
+      <section
+        class="contact-section section"
+        id="contact"
+      >
+
+        <div class="container">
+
+
+          <!-- Contact Heading -->
+          <div class="contact-heading reveal">
+
+            <p class="section-label">
+              Say hello
+            </p>
+
+
+            <h2 class="contact-title">
+
+              Let's make something
+              <strong>useful.</strong>
+
+            </h2>
+
+
+            <p class="contact-description">
+
+              I'm always open to new opportunities
+              and collaborations.
+
+            </p>
+
+          </div>
+
+
+
+          <!-- Contact Cards -->
+          <div class="contact-list">
+
+
+            <!-- Email -->
+            <a
+              href="mailto:namannagar29@gmail.com"
+              class="contact-card email-card reveal"
+            >
+
+              <i class="fa-regular fa-envelope contact-icon"></i>
+
+              <h3>
+                Email
+              </h3>
+
+              <p>
+                namannagar29@gmail.com
+              </p>
+
+            </a>
+
+
+
+            <!-- LinkedIn -->
+            <a
+              href="#"
+              class="contact-card reveal"
+              data-disabled-link
+            >
+
+              <i class="fa-brands fa-linkedin-in contact-icon"></i>
+
+              <h3>
+                LinkedIn
+              </h3>
+
+              <p>
+                Connect with me
+              </p>
+
+            </a>
+
+
+
+            <!-- GitHub -->
+            <a
+              href="https://github.com/Naman-Nagar10"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-card reveal"
+            >
+
+              <i class="fa-brands fa-github contact-icon"></i>
+
+              <h3>
+                GitHub
+              </h3>
+
+              <p>
+                Check my work
+              </p>
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="site-footer">
+
+      <div class="container footer-content">
+
+        <p>
+          Made with ❤️ and ☕
+        </p>
+
+        <p>
+          © <span id="current-year">2026</span>
+          Naman Nagar
+        </p>
+
+      </div>
+
+    </footer>
+
+  </div>
+
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
 
 </body>
+
 </html>
