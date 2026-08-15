@@ -76,3 +76,43 @@ Visitors can contact or connect with me through:
 - Font Awesome
 - Google Fonts
 
+Live Projects
+Campus Saathi
+
+Live:
+https://naman-nagar10.github.io/campus-saathi/
+
+GitHub:
+https://github.com/naman-nagar10/campus-saathi
+
+To-Do App
+
+Live:
+https://naman-nagar10.github.io/Todo-App/
+
+GitHub:
+https://github.com/naman-nagar10/Todo-App
+
+Weather App
+
+Live:
+https://naman-nagar10.github.io/Weather/
+
+GitHub:
+https://github.com/naman-nagar10/Weather
+
+Contact
+
+Naman Nagar
+
+Email: namannagar29@gmail.com
+
+GitHub:
+https://github.com/Naman-Nagar10
+
+License
+
+This project is created for personal portfolio and learning purposes.
+
+© 2026 Naman Nagar
+
