@@ -110,7 +110,6 @@ Email: namannagar29@gmail.com
 GitHub:
 https://github.com/Naman-Nagar10
 
-License
 
 This project is created for personal portfolio and learning purposes.
 
